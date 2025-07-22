@@ -9,33 +9,36 @@
 - 测试样本: 7600
 
 ## 项目结构
-- **AG_News_Transformer_Classification/**
-    - **data/**
-        - ag_news_csv/
-            - classes.txt
-            - test.csv
-            - train.csv
-        - processed/
-            - train_processed.pkl
-            - test_processed.pkl
-        - ag_news_csv.tgz
-    - **models/**
-        - transformer_model.pt
-        - tokenizer_config.json
-    - **src/**
-        - config.yaml
-        - data_preprocessing.py
-        - model.py
-        - train.py
-        - evaluate.py
-        - predict.py
-    - **results/**
-        - training_curves.png
-        - confusion_matrix.png
-        - classification_report.txt
-    - requirements.txt
-    - README.md
-
+```bash
+AG_News_Transformer_Classification/
+│
+├── data/                           # 数据目录
+│   ├── ag_news_csv/                # 原始数据集
+│   │   ├── classes.txt             # 类别标签文件
+│   │   ├── test.csv                # 测试集
+│   │   └── train.csv               # 训练集
+│   ├── processed/                  # 预处理后数据
+│   │   ├── train_processed.pkl     # 处理后的训练数据
+│   │   └── test_processed.pkl      # 处理后的测试数据
+│   └── ag_news_csv.tgz             # 原始压缩包（可选）
+├── src/                            # 源代码
+│   │
+│   ├── models/                         # 模型目录
+│   │   ├── transformer_model.pt        # 训练好的模型权重
+│   │   └── tokenizer_config.json       # 分词器配置
+│   ├── results/                        # 实验结果
+│   │   ├── training_curves.png         # 训练曲线图
+│   │   ├── confusion_matrix.png        # 混淆矩阵
+│   │   └── classification_report.txt   # 分类报告
+│   ├── data_preprocessing.py       # 数据预处理脚本
+│   ├── model.py                    # 模型定义
+│   ├── train.py                    # 训练脚本
+│   ├── evaluate.py                 # 评估脚本
+│   └── predict.py                  # 预测脚本
+├── requirements.txt                # 依赖库列表
+├── config.yaml                     # 配置文件
+└── README.md                       # 项目说明文档
+```
 
 ## 快速开始
 
@@ -66,9 +69,9 @@ python src/predict.py
 
 混淆矩阵保存在 results/confusion_matrix.png
 
-text
 
-### 使用说明
+
+## 使用说明
 
 1. **下载数据集**:
    - 从Fast.ai获取AG News数据集:`https://s3.amazonaws.com/fast-ai-nlp/ag_news_csv.tgz`
