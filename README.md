@@ -1,15 +1,15 @@
-# 基于Transformer的新闻文本分类
+# 🏡基于Transformer的新闻文本分类
 
 本项目使用Transformer模型对AG News数据集进行分类，包含完整的数据预处理、模型训练、评估和预测流程。
 
-## 数据集
+## 📊数据集
 - AG News数据集（4个类别:World, Sports, Business, Sci/Tech）
 - 训练集: 108000条样本
 - 验证样本: 12000
 - 测试样本: 7600
 
-## 项目结构
-```bash
+## 📂项目结构
+```bplaintext
 AG_News_Transformer_Classification/
 │
 ├── data/                           # 数据目录
@@ -39,7 +39,7 @@ AG_News_Transformer_Classification/
 └── README.md                       # 项目说明文档
 ```
 
-## 快速开始
+## 🚀快速开始
 
 1. **安装依赖**
 ```bash
@@ -70,7 +70,7 @@ python src/predict.py
 
 
 
-## 使用说明
+## 📄使用说明
 
 1. **下载数据集**:
    - 从Fast.ai获取AG News数据集:`https://s3.amazonaws.com/fast-ai-nlp/ag_news_csv.tgz`
