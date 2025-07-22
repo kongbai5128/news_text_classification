@@ -50,6 +50,7 @@ pip install -r requirements.txt
 ```
 3. **数据预处理**
 ```bash
+cd src
 python src/data_preprocessing.py
 ```
 4. **训练模型**
