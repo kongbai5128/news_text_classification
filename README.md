@@ -22,7 +22,6 @@ AG_News_Transformer_Classification/
 │   │   └── test_processed.pkl      # 处理后的测试数据
 │   └── ag_news_csv.tgz             # 原始压缩包（可选）
 ├── src/                            # 源代码
-│   │
 │   ├── models/                         # 模型目录
 │   │   ├── transformer_model.pt        # 训练好的模型权重
 │   │   └── tokenizer_config.json       # 分词器配置
@@ -30,13 +29,13 @@ AG_News_Transformer_Classification/
 │   │   ├── training_curves.png         # 训练曲线图
 │   │   ├── confusion_matrix.png        # 混淆矩阵
 │   │   └── classification_report.txt   # 分类报告
+│   ├── config.yaml                 # 配置文件
 │   ├── data_preprocessing.py       # 数据预处理脚本
 │   ├── model.py                    # 模型定义
 │   ├── train.py                    # 训练脚本
 │   ├── evaluate.py                 # 评估脚本
 │   └── predict.py                  # 预测脚本
 ├── requirements.txt                # 依赖库列表
-├── config.yaml                     # 配置文件
 └── README.md                       # 项目说明文档
 ```
 
