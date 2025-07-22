@@ -40,28 +40,31 @@ AG_News_Transformer_Classification/
 ```
 
 ## 🚀快速开始
-
-1. **安装依赖**
+1. **拉取项目**
+```bash
+git clone https://github.com/kongbai5128/news_text_classification.git
+```
+2. **安装依赖**
 ```bash
 pip install -r requirements.txt
 ```
-数据预处理
+3. **数据预处理**
 ```bash
 python src/data_preprocessing.py
 ```
-训练模型
+4. **训练模型**
 ```bash
 python src/train.py
 ```
-评估模型
+5. 评估模型**
 ```bash
 python src/evaluate.py
 ```
-交互式预测
+6. **交互式预测**
 ```bash
 python src/predict.py
 ```
-实验结果
+## 实验结果
 测试准确率: 约92%
 
 训练曲线保存在 results/training_curves.png
@@ -82,6 +85,7 @@ python src/predict.py
    python src/train.py               # 训练模型
    python src/evaluate.py            # 评估模型
    python src/predict.py             # 进行预测
+   ```
 自定义配置:
 
 修改config.yaml中的超参数
